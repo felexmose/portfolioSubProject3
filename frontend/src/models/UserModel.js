@@ -1,6 +1,6 @@
-class UserModel {
-    constructor(email1, password1) {
-      this.email = email1;
-      this.password = password1;
+export class UserModel {
+    constructor(email, password) {
+      this.email = email;
+      this.password = password;
     }
   }

@@ -2,7 +2,7 @@ import React from 'react';
 
 function ActorCard({actor}) {
   return(
-    <div className="">     
+    <div className="box">     
       <div>
         <h2>{actor.primaryName}</h2>
         <p>{actor.birthYear}</p>

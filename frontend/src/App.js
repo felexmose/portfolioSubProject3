@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Movies from './pages/Movies';
 import Actors from './pages/Actors';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 import MainHeader from './components/MainHeader';
 import MovieDetail from './pages/MovieDetail';
 import {Container, Row, Col }from 'react-bootstrap';
@@ -41,6 +42,9 @@ function App() {
                   </Route>
                   <Route path='/login'>
                     <Login />
+                  </Route>
+                  <Route path='/signup'>
+                    <Signup />
                   </Route>
                   <Route path='/movie-detail/:movieId'>
                     <MovieDetail />

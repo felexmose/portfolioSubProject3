@@ -2,7 +2,7 @@ import React from 'react';
 
 function MovieCard({movie}) {
   return(
-    <div className="">     
+    <div className="box">     
       <div>
         <h2>{movie.primaryTitle}</h2>
         <p>{movie.startYear}</p>

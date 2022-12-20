@@ -1,7 +1,8 @@
 
 import {useState} from 'react';
 import { login } from "../services/UserService";
-import UserModel from "../models/UserModel";
+import {Link} from 'react-router-dom';
+import {UserModel} from "../models/UserModel";
 
 
 
@@ -40,8 +41,8 @@ const Login =() => {
       setError(true);
     } else {
       console.log('111111111');
-      //const userCreds = new UserModel(email,password);
-      const userCreds = {Email:email, passwordHash:password};
+      const userCreds = new UserModel(email,password);
+      //const userCreds = {Email:email, passwordHash:password};
       console.log('22222222');
       login(userCreds).then(response => {
         //setMovies(response);
@@ -91,20 +92,22 @@ const Login =() => {
         {successMessage()}
       </div>
  
-      <form>
-        
+      <form>      
  
         <label className="label">Email</label>
         <input onChange={handleEmail} className="input"
           value={email} type="email" />
+          
  
         <label className="label">Password</label>
         <input onChange={handlePassword} className="input"
           value={password} type="password" />
- 
+          
         <button onClick={handleSubmit} className="btn" type="submit">
           Submit
         </button>
+        <br/>
+        <Link  to='/signup'>Sign-up now</Link>
       </form>
     </div>
   );
