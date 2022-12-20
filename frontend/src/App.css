@@ -1,3 +1,22 @@
+.div1{
+  display: inline-flex;
+  /*width: -webkit-fill-available;*/
+}
+
+.leftBarDiv{
+  background-color: orangered;
+    /*width: 15vmin;*/
+}
+
+.middleDiv{
+  /*width: 80vmin;*/
+}
+
+.rightBarDiv{
+  background-color: orangered;
+    /*width: 15vmin;*/
+}
+
 .App {
   text-align: center;
 }
